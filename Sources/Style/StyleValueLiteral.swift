@@ -1,0 +1,2 @@
+
+public protocol StyleValueLiteral: Codable {}
