@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 
-	s.name = "Tyler.Style"
+	s.name = "Style"
 	s.version = "0.0.1"
 	s.swift_version = "4.2"
 	s.summary = "Tyler Style"
@@ -9,10 +9,10 @@ Pod::Spec.new do |s|
 	s.source = { :git => "https://github.com/IgorMuzyka/Tyler.Style.git", :tag => s.version.to_s }
 	s.license = { :type => "MIT", :file => "LICENSE" }
 	s.author = { 'igormuzyka' => "igormuzyka42@gmail.com" }
-	s.source_files = "Sources/*"
+	s.source_files = "Sources/Style/*"
 
-	s.dependency "Tyler.Tag"
-	s.dependency "Tyler.Variable"
+	s.dependency "Tag"
+	s.dependency "Variable"
 
 	s.osx.deployment_target = "10.10"
 	s.ios.deployment_target = "9.0"
