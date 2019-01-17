@@ -1,12 +1,17 @@
 
-public protocol Style: Codable {}
+import TypePreservingCodingAdapter
+
+public protocol Style: Codable {
+
+    static var alias: Alias { get }
+}
 
 #if os(iOS) || os(tvOS) || os(macOS)
 
 extension Style {
 
 	public func stylist(from store: StylistsStore) -> Stylist? {
-		return store.access(key: String(reflecting: type(of: self)))
+        return store.access(by: Self.alias)
 	}
 }
 

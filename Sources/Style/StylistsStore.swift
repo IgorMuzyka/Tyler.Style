@@ -1,20 +1,22 @@
 
+import TypePreservingCodingAdapter
+
 #if os(iOS) || os(tvOS) || os(macOS)
 
 public final class StylistsStore {
 
-    private var stylists = [String: Stylist]()
+    private var stylists = [Alias: Stylist]()
 
     public init() {}
 
-	@discardableResult
+    @discardableResult
     public func add<GenericStyle: Style>(stylist: Stylist, for: GenericStyle.Type) -> StylistsStore {
-        let key = String(reflecting: GenericStyle.self)
+        let key = GenericStyle.alias
         stylists[key] = stylist
-		return self
+        return self
     }
 
-    public func access(key: String) -> Stylist? {
+    public func access(by key: Alias) -> Stylist? {
         return stylists[key]
     }
 }

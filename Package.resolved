@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Tyler.Tag",
+        "repositoryURL": "https://github.com/IgorMuzyka/Tyler.Tag",
+        "state": {
+          "branch": "master",
+          "revision": "235120d0dd85d0b2db95ba04f6637fc6f87b19b6",
+          "version": null
+        }
+      },
+      {
+        "package": "Tyler.Variable",
+        "repositoryURL": "https://github.com/IgorMuzyka/Tyler.Variable",
+        "state": {
+          "branch": "master",
+          "revision": "b5e2b1c7f7750c33c2c921396d1974bd72b8d46e",
+          "version": null
+        }
+      },
+      {
+        "package": "TypePreservingCodingAdapter",
+        "repositoryURL": "https://github.com/IgorMuzyka/Type-Preserving-Coding-Adapter",
+        "state": {
+          "branch": "master",
+          "revision": "56de4b11ca4154837b18634628e6370bb53fd095",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

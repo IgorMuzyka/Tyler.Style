@@ -11,8 +11,13 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/IgorMuzyka/Tyler.Variable", .branch("master")),
         .package(url: "https://github.com/IgorMuzyka/Tyler.Tag", .branch("master")),
+        .package(url: "https://github.com/IgorMuzyka/Type-Preserving-Coding-Adapter", .branch("master")),
     ],
     targets: [
-        .target(name: "Style", dependencies: ["Tyler.Variable", "Tyler.Tag"]),
+        .target(name: "Style", dependencies: [
+            "Tyler.Variable",
+            "Tyler.Tag",
+            "TypePreservingCodingAdapter",
+        ]),
     ]
 )

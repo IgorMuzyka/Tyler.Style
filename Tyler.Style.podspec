@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
 
 	s.dependency "Tag"
 	s.dependency "Variable"
+    s.dependency "TypePreservingCodingAdapter"
 
 	s.osx.deployment_target = "10.10"
 	s.ios.deployment_target = "9.0"
